@@ -47,6 +47,8 @@ module.exports = {
      {
       resolve: `gatsby-plugin-mdx`,
       options: {
+        posts: require.resolve("./src/component/layout.js"),
+        default: require.resolve("./src/component/layout.js"),
         extensions: [`.mdx`, `.md`],
         gatsbyRemarkPlugins: [
           {
@@ -68,15 +70,7 @@ module.exports = {
         display: 'swap'
       }
     },
-    {
-      resolve:    `gatsby-plugin-mdx`,
-      options: {
-        defaultLayouts: {
-          posts: require.resolve("./src/component/layout.js"),
-          default: require.resolve("./src/component/layout.js")
-        }
-      }
-  },
+   
     
   ],
 }

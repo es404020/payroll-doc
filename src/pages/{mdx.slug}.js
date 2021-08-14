@@ -3,10 +3,7 @@ import { graphql } from 'gatsby'
 import { Box, Text, Flex, Grid } from "@chakra-ui/react";
 import { MDXRenderer } from 'gatsby-plugin-mdx'
 const DetailsPage = ({ data }) => {
-  useEffect(() => {
-    // Update the document title using the browser API
-   console.log(data)
-  });
+
   
     return (
         <Flex alignItems="flex-start" direction="column" p={5} width="auto">
