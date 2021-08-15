@@ -4,7 +4,7 @@ import {Link} from "gatsby";
 import { graphql } from 'gatsby'
 
 export default function Home({ data }) {
-
+  const url = typeof window !== 'undefined' ? window.location.href : '';
 
 
   return (
@@ -17,7 +17,7 @@ export default function Home({ data }) {
 
 
       <Grid templateColumns="repeat(2,2fr)" gap="6"  width="70%">
-        <Flex borderRadius="10px"  as={Link} to="/guide/getstarted/"
+        <Flex borderRadius="10px"  as={Link} to={process.env.URL+"guide/getstarted/"}
           boxShadow="md"
           direction="column"
           justifyContent="space-evenly"

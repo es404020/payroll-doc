@@ -61,6 +61,7 @@ import {
 import { AiOutlineHome } from 'react-icons/ai'
 
 const Sidenav = () => {
+    const url = typeof window !== 'undefined' ? window.location.href : '';
     return (
         <Flex w="15%" pt="60px" position="fixed" left="0" bg="#FAFCFE" px={5} borderRight="2px solid #EBF0F3" h="100vh" direction="column" alignItems="stretch" >
             {/* <Flex w="35%" direction="row"  role="group" _hover={{ fontWeight: 'semibold' }} justifyContent="center" alignItems="center"  _groupHover={{ color: 'tomato' }}>
@@ -73,7 +74,7 @@ const Sidenav = () => {
 
 
             <List spacing={3} >
-                <ListItem as={Link} mb={10} display="block" to="/" activeStyle={{
+                <ListItem as={Link} mb={10} display="block" to={process.env.URL} activeStyle={{
                     color: "#09a5db"
                 }} fontWeight="semibold" color="#67686F" _hover={{
 
@@ -86,7 +87,7 @@ const Sidenav = () => {
                 </ListItem>
 
 
-                <ListItem  mb={10}  display="block" as={Link} to="/about/" activeStyle={{
+                <ListItem  mb={10}  display="block" as={Link} to= {process.env.URL+"about/"}  activeStyle={{
                     color: "#09a5db"
                 }} fontWeight="semibold" color="#67686F" _hover={{
 
@@ -95,7 +96,7 @@ const Sidenav = () => {
                 }} >
 
                     <ListIcon as={MdGroupWork} h="24px" w="24px" />
-                    Component
+                    Component 
                 </ListItem>
                 <ListItem  mb={10}  display="block" as={Link}  activeStyle={{
                     color: "#09a5db"

@@ -38,6 +38,7 @@ import Headers from "./header";
 import Sidenav from "./sidenav";
 import {Link, StaticQuery, graphql} from 'gatsby'
 export default function Layout({ children }) {
+  const url = typeof window !== 'undefined' ? window.location.href : '';
   return (
 
     <StaticQuery
