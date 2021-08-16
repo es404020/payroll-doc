@@ -6,6 +6,7 @@ module.exports = {
   siteMetadata: {
     title: `HRMS Doc`,
   },
+  pathPrefix: `/payrolldoc`,
  
   plugins: [
     

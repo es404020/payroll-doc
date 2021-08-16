@@ -17,7 +17,7 @@ export default function Home({ data }) {
 
 
       <Grid templateColumns="repeat(2,2fr)" gap="6"  width="70%">
-        <Flex borderRadius="10px"  as={Link} to={process.env.URL+"guide/getstarted/"}
+        <Flex borderRadius="10px"  as={Link} to="/guide/getstarted/"
           boxShadow="md"
           direction="column"
           justifyContent="space-evenly"

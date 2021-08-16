@@ -74,7 +74,7 @@ const Sidenav = () => {
 
 
             <List spacing={3} >
-                <ListItem as={Link} mb={10} display="block" to={process.env.URL} activeStyle={{
+                <ListItem as={Link} mb={10} display="block" to="/" activeStyle={{
                     color: "#09a5db"
                 }} fontWeight="semibold" color="#67686F" _hover={{
 
@@ -87,7 +87,7 @@ const Sidenav = () => {
                 </ListItem>
 
 
-                <ListItem  mb={10}  display="block" as={Link} to= {process.env.URL+"about/"}  activeStyle={{
+                <ListItem  mb={10}  display="block" as={Link} to= "/about/"  activeStyle={{
                     color: "#09a5db"
                 }} fontWeight="semibold" color="#67686F" _hover={{
 
