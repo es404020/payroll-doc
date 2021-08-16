@@ -42,11 +42,12 @@ export default function Home({ data }) {
         <Text color="#85848B" fontWeight="medium" fontSize="sm">Set up your local environment to run Payroll client.</Text>
         </Flex>
         <Flex borderRadius="10px"
+        as={Link} to="/guide/projectstructure/"
           boxShadow="md"
           direction="column"
           justifyContent="space-evenly"
 
-          // bgGradient={`linear(to-bl, #27BC48, ${bg1},${bg1},${bg1})`}
+          // bgGradient={`linear(to-bl, #27BC48, ${bg1},${bg1},${bg1})`} projectstructure
           style={{
             border: "2px solid #E9F1FB",
           }} w="100%" h="150px" p="3" transition="all .5s ease-out" _hover={{
