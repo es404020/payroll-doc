@@ -31,8 +31,8 @@ jobs:
         uses: appleboy/scp-action@master
         env:
           HOST:  "66.70.202.147"
-          USERNAME:  "root"
           PORT:  "2810"
+          USERNAME:  "root"
           PASSWORD: "Safety_101!"
         with:
           source: "./public"
