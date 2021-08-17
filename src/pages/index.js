@@ -60,7 +60,7 @@ export default function Home({ data }) {
 
         <Text color="#85848B" fontWeight="medium" fontSize="sm">Payroll Client Architecture ,includes api,folder and file structure</Text>
         </Flex>
-        <Flex borderRadius="10px"
+        <Flex borderRadius="10px"  as={Link} to="/guide/cicd/"
           boxShadow="md"
           direction="column"
           justifyContent="space-evenly"
@@ -74,9 +74,9 @@ export default function Home({ data }) {
            
           }} >
 
-        <Text color="#09a5db" fontSize="medium" fontWeight="bold">API structure</Text>
+        <Text color="#09a5db" fontSize="medium" fontWeight="bold">CI/CD</Text>
 
-        <Text color="#85848B" fontWeight="medium" fontSize="sm">Payroll server api structure .</Text>
+        <Text color="#85848B" fontWeight="medium" fontSize="sm">HRM deployement pipeline .</Text>
         
 
 
